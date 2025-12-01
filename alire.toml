@@ -1,0 +1,12 @@
+name = "adventofcode2025"
+description = "Advent of Code 2025 solutions in Ada"
+version = "0.1.0-dev"
+
+authors = ["Nepomuceno"]
+maintainers = ["Nepomuceno <example@example.com>"]
+maintainers-logins = ["Nepomuceno"]
+licenses = "MIT"
+website = ""
+tags = ["advent-of-code", "puzzle", "cli"]
+
+executables = ["adventofcode2025"]

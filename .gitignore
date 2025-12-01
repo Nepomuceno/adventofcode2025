@@ -1,0 +1,8 @@
+/obj/
+/bin/
+/alire/
+/config/
+
+# Input files (contain personal puzzle inputs)
+inputs/day_*.txt
+!inputs/day_*_example.txt
