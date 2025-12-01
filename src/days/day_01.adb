@@ -40,7 +40,7 @@ package body Day_01 is
       Put_Line ("Number of Zeros: " & Integer'Image (Number_of_Zeros));
    end Part_1;
 
-   procedure Part_2 (Input : String) is   
+   procedure Part_2 (Input : String) is
       Lines  : constant String_Array_Access := Read_File (Input);
       Line   : Unbounded_String;
       Dir    : Character;
@@ -56,14 +56,16 @@ package body Day_01 is
             Line := Lines (I);
             Dir := Element (Line, 1);
             Num := Integer'Value (Slice (Line, 2, Length (Line)));
-            Put_Line ("Dir: " & Dir & "  Number: " & Integer'Image(Num));
-            for J in 1..Num loop
+            Put_Line ("Dir: " & Dir & "  Number: " & Integer'Image (Num));
+            for J in 1 .. Num loop
                if Dir = 'L' then
                   Position := Position - 1;
-                  Put_Line ("Moving Left " & Integer'Image(J) & " Position: " & Integer'Image(Position));
+                  Put_Line ("Moving Left " & Integer'Image (J) &
+                  " Position: " & Integer'Image (Position));
                else
                   Position := Position + 1;
-                  Put_Line ("Moving Right" & Integer'Image(J) & " Position: " & Integer'Image(Position));
+                  Put_Line ("Moving Right" & Integer'Image (J) &
+                  " Position: " & Integer'Image (Position));
                end if;
                if Position = 100 then
                   Position := 0;
